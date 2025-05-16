@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Pup">#49386c</color>
+    <color name="Pup2">#7d64b7</color>
+    <color name="pink">#ef9292</color>
+    <color name="yell">#ffe394</color>
+    <color name="pink1">#fbebeb</color>
+    <color name="Black2">#41423f</color>
+    <color name="Black_for_hint">#eff0f0</color>
+    <color name="pup_backg">#f3ebfb</color>
+
+
+
+
+    <color name="text_color_header">#323232</color>
+    <color name="text_color_description">#616161</color>
+    <color name="G_white">#efe9f4</color>
+
+
+    <color name="Blue_v1">#4586D3</color>
+    <color name="Blue_v2">#c2c8cf</color>
+
+    <color name="p1">#3b8787</color>
+    <color name="p2">#7abd9a</color>
+    <color name="p3">#7abdab</color>
+    <color name="p4">#0c486c</color>
+    <color name="p5">#cff09f</color>
+    <color name="p6">#edf0e8</color>
+    <color name="p7">#128b8b</color>
+
+    <color name="Red_google">#F50028</color>
+    <color name="green_back">#D8FCE5</color>
+
+</resources>

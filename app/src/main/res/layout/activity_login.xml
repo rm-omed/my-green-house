@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login_activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewSCAN"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="150dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="270dp"
+            android:src="@drawable/greenhouse"
+            android:layout_marginTop="50dp" />
+        <TextView
+            android:id="@+id/tx_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back"
+            android:textColor="@color/Black2"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/btn_pink"
+            android:layout_marginTop="100dp">
+
+            <EditText
+                android:id="@+id/editEMAIL1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_strock_white"
+                android:ems="10"
+                android:hint="emait or number phone"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                android:layout_margin="20dp"
+                />
+
+            <EditText
+                android:id="@+id/editPassword1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_strock_white"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:textColor="@color/Black2"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                android:layout_marginBottom="5dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_agree"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Remmember me "
+                android:layout_marginRight="50dp"
+                android:textColor="@color/pink1"
+                android:layout_marginBottom="10dp"
+                android:checked="true"
+                android:outlineSpotShadowColor="@color/Pup"/>
+
+            <Button
+                android:id="@+id/button_login1"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_white"
+                android:text="Log in"
+                android:textColor="@color/p4"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tx_forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot your password"
+                android:textColor="@color/white"
+
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:id="@+id/tx_creat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create new"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Signup_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:background="@color/p4"
+            >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/leftrecovered"
+                android:layout_marginBottom="28dp"
+                android:layout_marginStart="30dp"
+                />
+            <TextView
+                android:id="@+id/tx_forgot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome "
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:gravity="center"
+            android:background="@drawable/btn_white"
+            android:orientation="vertical"
+            app:cardElevation="15dp"
+            android:elevation="6dp"
+            android:layout_margin="40dp">
+
+
+            <TextView
+                android:id="@+id/tx_for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create new"
+                android:textColor="@color/p4"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_fullname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_strock"
+                android:ems="10"
+                android:hint="Full name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:textColor="@color/Blue_v2"
+                android:textColorHint="@color/Black2"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_strock"
+                android:ems="10"
+                android:hint="Email address "
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/Black2"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/algeria"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:minHeight="48dp"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/Black2"
+                    android:textSize="15dp"
+                    android:hint="Phone number"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/input_strock"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_strock"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/Black2"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/editTPasswordconf"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_strock"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/Black2"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+
+                />
+            <CheckBox
+                android:id="@+id/checkBox_agree"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Agree "
+                android:layout_marginRight="50dp"
+                android:textColor="@color/Black2"
+                android:layout_marginBottom="40dp"
+                android:checked="true"
+                android:outlineSpotShadowColor="@color/white"/>
+            <Button
+                android:id="@+id/button_sign"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_pink"
+                android:text="Sign up"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tx_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have account "
+                android:textStyle="bold"
+                android:textColor="@color/Blue_v1"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

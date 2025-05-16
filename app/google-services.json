@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "997011228073",
+    "project_id": "my-green-house-e6327",
+    "storage_bucket": "my-green-house-e6327.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997011228073:android:6c110e60519e98301130b8",
+        "android_client_info": {
+          "package_name": "com.univbechar.mygreenhouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrwCOBiGD6qANCFfG2lUlzkj8GXymro6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
