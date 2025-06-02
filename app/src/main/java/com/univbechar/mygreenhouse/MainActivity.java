@@ -24,21 +24,42 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Base64;
 
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+
+public class MainActivity extends AppCompatActivity {
+    private static final String ALGORITHM = "AES";
+    private static final int KEY_SIZE = 256;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnlogout = findViewById(R.id.btn_logout);
-        Button btn_history=findViewById(R.id.btn_history);
+       @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageView img_logout = findViewById(R.id.img_logout);
+       @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageView img_history=findViewById(R.id.img_history);
+       @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageView img_graph=findViewById(R.id.img_graph);
 
-        btn_history.setOnClickListener(new View.OnClickListener() {
+
+        img_graph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Tempirature_Activity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        img_history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, History_Activity.class);
@@ -48,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btnlogout.setOnClickListener(new View.OnClickListener() {
+        img_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Login_activity.class);
@@ -59,6 +80,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    // CHIFFREMENT
+    public static String encrypt(String plainText, String secretKey) throws Exception {
+        SecretKey key = generateKey(secretKey);
+        Cipher cipher = Cipher.getInstance(ALGORITHM);
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+
+        byte[] encryptedBytes = cipher.doFinal(plainText.getBytes());
+        return Base64.getEncoder().encodeToString(encryptedBytes);
+    }
+
+    public static String decrypt(String encryptedText, String secretKey) throws Exception {
+        SecretKey key = generateKey(secretKey);
+        Cipher cipher = Cipher.getInstance(ALGORITHM);
+        cipher.init(Cipher.DECRYPT_MODE, key);
+
+        byte[] encryptedBytes = Base64.getDecoder().decode(encryptedText);
+        byte[] decryptedBytes = cipher.doFinal(encryptedBytes);
+        return new String(decryptedBytes);
+    }
+
+    private static SecretKey generateKey(String secretKey) throws Exception {
+        KeyGenerator keyGenerator = KeyGenerator.getInstance(ALGORITHM);
+        keyGenerator.init(KEY_SIZE);
+        return new SecretKeySpec(secretKey.getBytes(), ALGORITHM);
+    }
+
+    // BEFORE END
 
     }
 

@@ -10,13 +10,18 @@
     <color name="Black2">#41423f</color>
     <color name="Black_for_hint">#eff0f0</color>
     <color name="pup_backg">#f3ebfb</color>
+    <color name="green">#1b9e58</color>
 
+/////////////////////////////
+    <color name="colorPrimary">#2E7D32</color>
+    <color name="colorPrimaryDark">#1B5E20</color>
+    <color name="colorAccent">#4CAF50</color>
 
-
+    <color name="switch_track">#80FFFFFF</color>
 
     <color name="text_color_header">#323232</color>
     <color name="text_color_description">#616161</color>
-    <color name="G_white">#efe9f4</color>
+    <color name="G_white">#eaf5ff</color>
 
 
     <color name="Blue_v1">#4586D3</color>

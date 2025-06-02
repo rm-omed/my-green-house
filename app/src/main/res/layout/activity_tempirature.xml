@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".Tempirature_Activity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/image_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/close"
+                android:layout_marginLeft="300dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:text="The graphic curve represents the temperature values during the week"
+            android:textColor="@color/green"
+            android:layout_marginTop="60dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.univbechar.mygreenhouse.GraphView
+                android:id="@+id/graphView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
