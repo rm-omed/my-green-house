@@ -55,7 +55,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/input_strock_white"
                 android:ems="10"
-                android:hint="emait or number phone"
+                android:hint="email or number phone"
                 android:inputType="text"
                 android:minHeight="48dp"
                 android:padding="15dp"
