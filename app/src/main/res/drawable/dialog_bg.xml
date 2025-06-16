@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient   android:startColor="@color/green_back" android:endColor="@color/green_back"
+        android:type="linear" android:gradientRadius="@dimen/material_emphasis_medium"/>
+    <corners android:radius="16dp"  />
+    <padding android:left="@dimen/cardview_compat_inset_shadow"/>
+</shape>

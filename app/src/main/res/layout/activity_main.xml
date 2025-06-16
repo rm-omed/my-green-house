@@ -23,54 +23,66 @@
     android:textSize="30dp"
     android:textColor="@color/Black2"/>
 
+                    <TextView
+                        android:id="@+id/lastUpdateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="3dp"
+                        />
+
+
         <!-- Line 2: Temperature and Humidity Display with Shadow -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="224dp"
             android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="12dp"
-            app:cardElevation="6dp"
-            app:cardBackgroundColor="@color/white">
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:weightSum="2"
+                android:layout_height="221dp"
+                android:background="@drawable/bachground_button_white"
                 android:gravity="center"
-                android:background="@drawable/bachground_button_white">
+                android:orientation="horizontal"
+                android:weightSum="2">
 
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/cloudy1"
-                        android:contentDescription="Today"/>
+                        android:contentDescription="Today"
+                        android:src="@drawable/cloudy1" />
 
                     <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="60%"
                         android:textColor="@color/Black2"
-                        android:textStyle="bold"
                         android:textSize="24sp"
-                        android:layout_marginTop="10dp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cloudy"
                         android:textColor="@color/Black2"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -110,12 +122,16 @@
                         android:id="@+id/temperatureText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="25°C"
+                        android:text="--°C"
                         android:textColor="@color/Black2"
                         android:textStyle="bold"
                         android:textSize="24sp"
                         android:layout_marginTop="10dp"/>
-
+                    <ImageView
+                        android:id="@+id/lock2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/encryption" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -141,11 +157,18 @@
                         android:id="@+id/humidityText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="60%"
+                        android:text="--%"
                         android:textColor="@color/Black2"
                         android:textStyle="bold"
                         android:textSize="24sp"
                         android:layout_marginTop="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/lock1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/encryption" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -153,6 +176,8 @@
                         android:text="Humidity"
                         android:textColor="@color/Black2"
                         android:textSize="18sp"/>
+
+
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

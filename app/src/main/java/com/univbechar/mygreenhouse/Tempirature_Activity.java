@@ -28,4 +28,10 @@ public class Tempirature_Activity extends AppCompatActivity {
         });
 
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        GraphView graphView = findViewById(R.id.graphView);
+        graphView.setIV("abcdef9876543210"); // real IV
+    }
 }
